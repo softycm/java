@@ -13,7 +13,7 @@
    <jar jarfile="${helloant_jar}" basedir="${dest}"/>
 </target>
 <target name="run" depends="build">
-   <java classname="com.zdz.ant.test.HelloAnt" classpath="D:/${helloant_jar}"/>
+   <java classname="com.zdz.ant.test.HelloAnt" classpath="${helloant_jar}"/>
 </target>
 <target name="clean">
    <delete dir="${dest}" />
